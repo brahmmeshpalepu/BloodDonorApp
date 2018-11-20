@@ -1,0 +1,65 @@
+<!-- <p>
+  contacts works!
+</p> -->
+<div *ngIf="loading" class="loading">
+    <img src="../../assets/images/loading.gif" alt="Flowers in Chania" width="460" height="345">
+</div>
+
+<div class = "container">
+  <form (submit)="addContact()">
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" name="first_name" [(ngModel)]="first_name"  class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" name="last_name" [(ngModel)]="last_name" [ngModelOptions]="{standalone: true}"
+         class="form-control">
+      </div>
+      <div class="form-group">
+          <label>Phone</label>
+          <input type="text" name="phone" [(ngModel)]="phone" [ngModelOptions]="{standalone: true}"
+           class="form-control">
+        </div>
+        <input type= "submit" class="btn btn btn-success" value="Add">
+  </form>
+</div>
+<!-- <table>
+    <tr>
+       <th>First Name</th>
+       <th>Last Name</th>
+       <th>Phone</th>
+       <th>Actions</th>
+    </tr>
+    
+    <tr *ngFor = "let contact of contacts">
+       <td>{{ contact.first_name }}</td>
+       <td>{{ contact.last_name }}</td>
+       <td>{{ contact.phone }}</td>
+       <td><input type="button" (click)="deleteContact(contact._id)" value="Delete" class="btn btn-danger"></td>
+    </tr>
+ </table> -->
+ <hr>
+<!-- <div class="col-md-12">
+  <div class="col-md-4">
+    <input type="text" placeholder="Quick Search" [(ngModel)]="searchTerm">
+  </div>
+  <div class="col-md-4" style="margin: right">
+      <button type="button" class="btn btn-primary" (click)="resetContactForm()">Add Contact</button>
+    </div>
+</div> -->
+ <div class="container">
+  <div *ngFor="let contact of contacts">
+    <div class="col-md-3">
+      {{contact.first_name}}
+    </div>
+    <div class="col-md-3">
+      {{contact.last_name}}
+    </div>
+    <div class="col-md-3">
+      {{contact.phone}}
+    </div>
+    <div><input type="button" (click)="deleteContact(contact._id)" value="Delete" class="btn btn-danger"></div>
+  </div>
+  <br>
+</div>

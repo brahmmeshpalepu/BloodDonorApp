@@ -1,0 +1,74 @@
+<div class="container-fluid main-container">
+  <div class="page-content" style="position:relative;">
+    <div class="row">
+     
+      <div class="col-md-12">
+        <div class="register-container">
+          <div class="register-box">
+            <div style="text-align: center;">
+
+            </div>
+            <div class="register-box-title">
+              Angular6@ Form submission - Developed by well balanced, High velocity development team at
+              <p>Welcome to Blood Donation Bank !!!</p>
+            </div>
+            <hr class="wide">
+            <form  (ngSubmit)="addPost()">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="registerbox-textbox">
+                    <input type="text" class="form-control" placeholder="Your name" name="name" [(ngModel)]="uname">
+                  </div>
+
+                  <div class="registerbox-textbox">
+                    <input type="number" class="form-control" placeholder="Your mobile" name="mobile" minlength="8" maxlength="14" [(ngModel)]="umobile">
+                  </div>
+
+                  <div class="registerbox-textbox">
+                    <input type="email" class="form-control" placeholder="Your Email(will act as your username)" name="email" [(ngModel)]="uemail">
+                  </div>
+
+                  <div class="registerbox-textbox">
+                    <input type="password" class="form-control" placeholder="Password" name="password" [(ngModel)]="upassword">
+                  </div>
+                  <div class="registerbox-textbox">
+                    <input type="password" class="form-control" placeholder="Confirm Password" name="cpassword" [(ngModel)]="ucpassword">
+                  </div>
+
+                  <div class="registerbox-textbox">
+                    <input type="date" class="form-control" name="dob" [(ngModel)]="udob">
+                  </div>
+                </div>
+                <div class="col-md-6">
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-md-12">
+                            <div class="registerbox-textbox">
+                                <div class="tech-list"> 
+                        
+                                    <li  *ngFor="let tech of  technologies">
+                                      <label class="contain">  
+                                 <input type="checkbox"  [(ngModel)]="tech.selected" [ngModelOptions]="{standalone: true}" (ngModelChange)="getTechnologies($event)" > {{tech.name}}
+                              <span class="checkmark"></span>
+                            </label>
+                            </li>   
+                            </div>     
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <input type="submit" class="btn btn-green" value="Submit">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,24 @@
+<div class="container-fluid main-container">
+  <div class="page-content" style="position:relative;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="register-container">
+          <div class="register-box">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="registerbox-textbox">
+                  <input type="text" class="form-control" placeholder="Your name" [(ngModel)]="username">
+                </div>
+                <div class="registerbox-textbox">
+                  <input type="password" class="form-control" placeholder="Password" [(ngModel)]="password">
+                </div>
+                <button type="submit" class="btn btn-primary">LOGIN</button>
+                <a routerLink="/signup">signup</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

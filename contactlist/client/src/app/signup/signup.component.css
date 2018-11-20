@@ -1,0 +1,340 @@
+.pro-av{
+    font-family: 'Lucida Sans','trebuchet MS',Arial,Helvetica;
+
+}
+.register-box-title {
+    color: #fff;
+    font-weight: bold;
+}
+.logo{
+    width:350px;
+}
+.foot-logo-img{
+    /* position: absolute; */
+    /* bottom: 0;
+    right: 0; */
+    text-align:right;
+   
+}
+
+.foot-logo-img img{
+    width: 40px;
+    height: 40px;
+}
+
+.myaccount-body h3, .myaccount-body p{
+    text-align: center;
+}
+.myaccount-body .signupForm {
+    /* background: #f7f7f7; */
+    background:#fff;
+    border: 1px solid #f9f9f9;
+    margin: auto;
+    /* width: 22.25rem; */
+    /* text-align: center; */
+    box-sizing: border-box;
+    padding: 30px 45px;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    border-radius: 3px;
+    box-shadow: 1px 2px 4px #ccc;
+}
+.signupForm input{
+    box-shadow: inset 1px 1px 1px #dfdfdf;
+    border-radius: 0;
+}
+
+.btn-green{
+/* background:#a4c639; */
+background: #2091D0;
+color:#fff;
+}
+
+.register-container{
+        padding: 2.5px 0px;
+        max-width: 350px;
+       margin:auto;
+    }
+    .register-box{
+    width:100%;
+    height:auto;
+    background:#fff;
+    position:relative;
+    }
+
+
+    .register-container .register-box .register-box-title {
+        position: relative;
+        text-align: left;
+        width: 100%;
+        /* height: 35px;  */
+        padding: 20px 20px 0;
+        font-family: 'Lucida Sans','trebuchet MS',Arial,Helvetica;
+        font-size: 14px;
+        /* text-transform: lowercase; */
+        font-weight: normal;
+        /* color: #444; */
+        /* color:#fff; */
+    }
+
+    .register-container .register-box .registerbox-textbox {
+        padding: 10px 20px;
+    }
+.page-container{
+
+    background:#f7f7f7;
+}    
+
+.padding-bottom-20{
+ padding-bottom:20px;
+}
+.logo-header {
+    border-bottom: solid 1px #e9e9e9;
+    text-align: center;
+    padding: 0.7rem 0;
+}
+
+
+.pad{
+    padding-left:0px;
+    padding-right:0px;
+}
+
+
+.page-content{
+    display: block;
+    /* margin-left: 224px; */
+    margin-right: 0;
+    margin-top: 0;
+    min-height: 100%;
+    padding: 0;
+}
+
+
+
+
+.register-box{
+
+    /* box-shadow: 1px 1px 1px 1px #f18507; */
+   
+    background-color: #C80B0B;
+}
+
+
+.form-control{
+    border-radius:0px;
+}
+
+/*form validation css*/
+
+.alert{
+    background: #f2edda;
+    padding: 7px;
+    font-size: .9em;
+    margin-bottom:0px;
+    display:inline-block;
+    animation: 2s alertAnim forwards;
+}
+
+
+.registerbox-textbox{
+    color:#fff;
+}
+input[type=checkbox], input[type=radio] {
+   
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* The container */
+.contain {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:#fff;
+}
+
+/* Hide the browser's default checkbox */
+.contain input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.contain:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.contain input:checked ~ .checkmark {
+    background-color: #2091D0;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.contain input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.contain .checkmark:after {
+    left: 9px;
+    top: 4px;
+    width: 8px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+
+/*css for Radio buttons*/
+
+
+/* The container */
+.radcontainer {
+    /* display: block; */
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:#fff;
+}
+
+/* Hide the browser's default radio button */
+.radcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radcontainer .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radcontainer:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radcontainer input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radcontainer .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radcontainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radcontainer .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+/*end of css for Radio buttons*/
+.tac{
+    padding-top: 0rem;
+    padding-left: 54px;
+    color:red;
+}
+.contain.mar-bot-0{
+    margin-bottom:0px;
+}
+.cv{
+    text-align: center;
+    color:red;
+}
+.form-control.ng-invalid.ng-touched{
+    border:1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes alertAnim{
+    from{
+        opacity:0;
+        transform: translateY(-20px);
+
+    }
+    to{
+        opacity:1;
+        transform :translateY(0);
+
+    }
+}
